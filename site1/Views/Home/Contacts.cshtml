@@ -1,0 +1,12 @@
+﻿@model TextField
+ @{
+        <!--Берем данные которые заполняли в панеле админа-->
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.KeyWords = Model.MetaKeyWords;
+    ViewBag.MetaDescription = Model.MetaDescription;
+}
+
+<div>
+    <!--Вывод содержания стр-->
+    @Html.Raw(Model.Text)
+</div>
